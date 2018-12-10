@@ -24,7 +24,9 @@ deploy:
   provider: releases
   api_key:
     secure: CCXla1uH17blAOyMcJxRie41TWRuivf6J2/x0l+8RcbQQ06gUI4Fc4NR95KgtD/UrlYS4LND74OxxX4Gny6XAGg/arSQjR00LuXJ4KUmGX4OVECapRk/SWdW6K6hezDLbMDEqKJmHHuzsGYmOipkpqKP3AMx+txdnBsZKuUeLcp15cEpQwP771+I244c4VniPQul/D56rhJeQ+CoSQcEPAn0isGF+YvxBrQObfJmbfaFTBWx57w3x+I2dkL9F1F2yFmAa6WH4Hi8aDwuowVvDh3u7teRVq+LYfa5m49GE4N2juDUVYPUMR2oz2tLDlcesBTg2zLx/SmgD9sGo8Dp0vzkzZV0R2l/CnBMj75JITHW8mK9Y4sO1226O84a2xIJadJgYrMgwZMKYEXidwyguDi8vdnBomMDrgehZ5mP3THo4kNWxvVKqptNtye3+13N8eDHgC/RWWeGtLnMNglaT0XlNJ/nitI0Ofn5Fc8hDEL7wjT0x28Q5AdgNNb1toQwT7Yt6LwhsIjI0QhCtiUIXcYVWxiiO0CYrCWQv8WM1Nbx0n2smlpjviHwrPeGnJK6nMVAm9Pl7DbB0R+9Z9NVqMI+J3tiXr7kSM6CtVjoC2trfGkHRMpayGrMy+f+Cwfef5kU0ucwL28WxQlcb7A4n+DJdpFCbOh6EaXNG4YANxQ=
+  file_glob: true
   file: products/*
+  skip_cleanup: true
   on:
     repo: felixcremer/LibeemdBuilder
     tags: true
