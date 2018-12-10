@@ -27,3 +27,4 @@ deploy:
   file: products/*.tar.gz
   on:
     repo: felixcremer/LibeemdBuilder
+    tags: true
