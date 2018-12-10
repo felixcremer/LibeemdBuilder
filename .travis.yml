@@ -24,3 +24,12 @@ before_script:
 script:
   - julia build_tarballs.jl
 
+deploy:
+    provider: releases
+        api_key:
+        file_glob: true
+        file: products/*.tar.gz
+        skip_cleanup: true
+        on:
+          repo: felixcremer/libeemdBuilder
+          tags: true
